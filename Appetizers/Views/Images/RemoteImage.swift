@@ -1,5 +1,5 @@
 //
-//  AppetizerRemoteImageView.swift
+//  RemoteImageView.swift
 //  Appetizers
 //
 //  Created by Dmitry Sechkarenko on 22.02.2022.
@@ -40,3 +40,4 @@ struct AppetizerRemoteImage: View {
             .onAppear { imageLoader.load(fromURL: urlString) }
     }
 }
+
