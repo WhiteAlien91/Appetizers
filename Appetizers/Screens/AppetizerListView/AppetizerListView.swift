@@ -17,8 +17,10 @@ struct AppetizerListView: View {
                 List(viewModel.appetizers, id: \.id) { appetizer in
                     AppetizerCell(appetizer: appetizer)
                         .onTapGesture {
-                            viewModel.selectedAppetizer = appetizer
-                            viewModel.isShowingDetail = true
+                            withAnimation {
+                                viewModel.selectedAppetizer = appetizer
+                                viewModel.isShowingDetail = true
+                            }
                         }
                 }
                 .navigationTitle("🍟 Appetizers")
