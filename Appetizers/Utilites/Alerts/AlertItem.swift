@@ -27,4 +27,19 @@ enum AlertContext {
     
     static let invalidData      = AlertItem(title: Text("Server Error"),
                                             message: Text("The data received from the server was invalid. Please try again or contact support."))
+    // MARK: - Account Alerts
+    static let invalidForm      = AlertItem(title: Text("Invalid Form"),
+                                            message: Text("Please ensure all fields in the form have been filled out."))
+    
+    static let invalidEmail     = AlertItem(title: Text("Invalid Email"),
+                                            message: Text("Invalid Email."))
+    
+    
+    static let userSaveSuccess  = AlertItem(title: Text("Profile Saved"),
+                                            message: Text("Successfully saved."))
+    
+    
+    static let invalidUserData  = AlertItem(title: Text("Profile Error"),
+                                            message: Text("There was an error saving or retrieving your profile."))
+    
 }
