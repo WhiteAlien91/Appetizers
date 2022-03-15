@@ -18,7 +18,8 @@ struct AppetizerDetailView: View {
         VStack {
             AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 300, height: 225)
+            
+            Spacer()
             
             VStack {
                 Text(appetizer.name)
@@ -45,17 +46,15 @@ struct AppetizerDetailView: View {
             } label: {
                 APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
             }
-            .padding(.bottom, 30)
+            .padding(.bottom, 50)
         }
-        .frame(width: 300, height: 525)
-        .ignoresSafeArea()
-        .background(Color(.systemBackground))
-        .cornerRadius(12)
-        .shadow(radius: 40)
+        //.frame(width: 300, height: 525)
+        //.ignoresSafeArea()
+        //.background(Color(.systemBackground))
+        //.cornerRadius(12)
+        //.shadow(radius: 40)
         .overlay(Button {
-      
                 isShowingDetail = false
-            
         } label: {
             XDismissButton()
         }, alignment: .topTrailing)
