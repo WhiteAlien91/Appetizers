@@ -15,9 +15,26 @@ struct AppetizerListView: View {
         ZStack {
             NavigationView {
                 List(viewModel.appetizers, id: \.id) { appetizer in
-                    AppetizerListCell(appetizer: appetizer)
+                    Button(action: {viewModel.isShowingDetail = true} ) {
+                        AppetizerListCell(appetizer: appetizer)
+                    }
+                    .sheet(isPresented: $viewModel.isShowingDetail) {
+                        AppetizerDetailView(appetizer: appetizer, isShowingDetail: $viewModel.isShowingDetail)
+                    }
+                    .foregroundColor(.brandPrimary)
+                    .swipeActions(edge: .leading) {
+                        Button {
+                            print("")
+                        } label: {
+                            Label("Favorite", systemImage: "star.circle")
+                        }
+                    }
+                    .tint(.yellow)
                 }
                 .navigationTitle("🍟 Appetizers")
+                .toolbar {
+                    SegmentedControlView(title: "")
+                }
                 .animation(.default, value: viewModel.isLoading)
             }
             .onAppear { viewModel.getAppetizers() }

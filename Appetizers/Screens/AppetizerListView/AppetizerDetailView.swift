@@ -48,11 +48,6 @@ struct AppetizerDetailView: View {
             }
             .padding(.bottom, 50)
         }
-        //.frame(width: 300, height: 525)
-        //.ignoresSafeArea()
-        //.background(Color(.systemBackground))
-        //.cornerRadius(12)
-        //.shadow(radius: 40)
         .overlay(Button {
                 isShowingDetail = false
         } label: {
