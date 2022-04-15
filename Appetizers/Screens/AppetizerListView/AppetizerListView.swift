@@ -22,19 +22,8 @@ struct AppetizerListView: View {
                         AppetizerDetailView(appetizer: appetizer, isShowingDetail: $viewModel.isShowingDetail)
                     }
                     .foregroundColor(.brandPrimary)
-                    .swipeActions(edge: .leading) {
-                        Button {
-                            print("")
-                        } label: {
-                            Label("Favorite", systemImage: "star.circle")
-                        }
-                    }
-                    .tint(.yellow)
                 }
                 .navigationTitle("🍟 Appetizers")
-                .toolbar {
-                    SegmentedControlView(title: "")
-                }
                 .animation(.default, value: viewModel.isLoading)
             }
             .onAppear { viewModel.getAppetizers() }

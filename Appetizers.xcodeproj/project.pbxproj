@@ -20,7 +20,6 @@
 		600DD5DF27C534CC00C03D26 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DD5DE27C534CC00C03D26 /* LoadingView.swift */; };
 		600DD5E227C64DE100C03D26 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600DD5E127C64DE100C03D26 /* AppetizerListViewModel.swift */; };
 		6027905827DCE68000E24BBB /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6027905727DCE68000E24BBB /* Color+Ext.swift */; };
-		602B31E527E3616A00BAF9CC /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602B31E427E3616900BAF9CC /* SegmentedControlView.swift */; };
 		6097E3DC27C8DDA30044F76C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097E3DB27C8DDA30044F76C /* AccountView.swift */; };
 		60B5C32D27DE49AF005ED1F6 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5C32C27DE49AF005ED1F6 /* AccountViewModel.swift */; };
 		60B5C32F27DE49ED005ED1F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5C32E27DE49ED005ED1F6 /* User.swift */; };
@@ -50,7 +49,6 @@
 		600DD5DE27C534CC00C03D26 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		600DD5E127C64DE100C03D26 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		6027905727DCE68000E24BBB /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
-		602B31E427E3616900BAF9CC /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		6097E3DB27C8DDA30044F76C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		60B5C32C27DE49AF005ED1F6 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		60B5C32E27DE49ED005ED1F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				60CF188E27D76E0400BAB4B5 /* Cells */,
 				60CF188F27D76E7F00BAB4B5 /* LoadingView */,
 				60CF188C27D63C4200BAB4B5 /* Images */,
-				602B31E627E3618800BAF9CC /* SegmentedControls */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,14 +162,6 @@
 				60B5C33227DF5A02005ED1F6 /* Date+Ext.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		602B31E627E3618800BAF9CC /* SegmentedControls */ = {
-			isa = PBXGroup;
-			children = (
-				602B31E427E3616900BAF9CC /* SegmentedControlView.swift */,
-			);
-			path = SegmentedControls;
 			sourceTree = "<group>";
 		};
 		6097E3DA27C8DD750044F76C /* AccountView */ = {
@@ -336,7 +325,6 @@
 				600DD5D527C52C9E00C03D26 /* NetworkManager.swift in Sources */,
 				60F4B4D027DA8AEE00326718 /* AppetizerTabView.swift in Sources */,
 				600DD5D227C52C1900C03D26 /* Appetizer.swift in Sources */,
-				602B31E527E3616A00BAF9CC /* SegmentedControlView.swift in Sources */,
 				600DD5E227C64DE100C03D26 /* AppetizerListViewModel.swift in Sources */,
 				6097E3DC27C8DDA30044F76C /* AccountView.swift in Sources */,
 				60F4B4D927DCE27B00326718 /* Order.swift in Sources */,
